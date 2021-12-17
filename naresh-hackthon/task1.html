@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <style>
+        #showname{
+            border:1px solid;
+            width:100px;
+            height:30px;
+        }
+        p{
+            border:1px solid;
+            width:100px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="showname"></div> <br>
+    <button onclick="countV()">calculate vowels</button>
+    <p id="result"></p>
+    <a href="https://github.com/naresh63/hackthon">
+        <button >go to github Repo</button>
+    </a>
+    
+    <!-- js -->
+    <script>
+        let n = document.getElementById('showname');
+        n.innerHTML="naresh";
+        let myname =n.innerHTML
+        console.log(myname)
+        let c= 0;
+        for(let t of myname){
+            console.log(t)
+            if(t==="a" || t==="e" || t==="i" || t==="o" || t==="u"){
+                c++;
+            }
+        }
+        console.log(c)
+        // function for counting vowel
+        let r =document.getElementById('result');
+        function  countV(){
+            r.innerHTML= c;
+        }
+    </script>
+</body>
+</html>

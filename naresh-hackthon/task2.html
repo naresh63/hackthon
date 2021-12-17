@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+</head>
+<body>
+    <script>
+        let n= 5;
+        let m= 1;
+        for(let i=1; i<=n; i++){
+            m=m*i
+        }
+        console.log("factorial",m) // factorial
+        // now check zeros
+        let d1 = m%10;
+        let d2 = parseInt(m/100)
+        let d3= m/10
+        let d3r = d3%10;
+        let arr =[d1,d2,d3r];
+        let c=0;
+        for(let z of arr){
+            if(z===0){
+                c++
+            }
+        }
+        console.log("no. of zeros",c)
+
+
+    </script>
+</body>
+</html>

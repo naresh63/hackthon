@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 8</title>
+    <style>
+        div{
+            border:1px solid;
+            width:100px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <p>user1</p>
+     <div id="uselect"></div> <hr>
+     <p>user2</p>
+     <div id="uselect1"></div>
+     <hr> <hr>
+     <p>winner is</p>
+     <div id="win"></div>
+     <!-- js -->
+     <script>
+           let u1arr =['rock','paper','scissor'] ;
+           let u2arr=['rock','scissor','paper'];
+       let un= parseInt(Math.random()*3);// give no.
+       console.log(un)
+        let u1=document.getElementById('uselect');
+        u1.innerHTML=u1arr[un];
+
+       // user 2
+       let u2=document.getElementById('uselect1');
+       u2.innerHTML=u2arr[un];
+      // for winning logic
+      let  w =document.getElementById('win')
+      // win 1
+      if(u1.innerHTML==="rock"> u2.innerHTML==="scissor" ){
+          w.innerHTML="user1 "
+      }else{
+        w.innerHTML="user2 "
+      }
+      // win2
+      
+     </script>
+</body>
+</html>
